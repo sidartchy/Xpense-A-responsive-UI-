@@ -3,6 +3,7 @@ import 'package:xpense/widgets/container1.dart';
 import 'package:xpense/widgets/navbar.dart';
 
 import '../utils/consts.dart';
+import '../widgets/container2.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,6 +23,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             NavBar(),
             Container1(),
+            Container2(),
           ],
         ),
       ),
