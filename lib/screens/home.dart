@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xpense/widgets/container1.dart';
 import 'package:xpense/widgets/navbar.dart';
 
 import '../utils/consts.dart';
@@ -20,6 +21,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             NavBar(),
+            Container1(),
           ],
         ),
       ),

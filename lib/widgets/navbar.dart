@@ -17,7 +17,7 @@ class _NavBarState extends State<NavBar> {
     return ScreenTypeLayout(
       mobile: MobileNavBar(),
       desktop: DesktopNavBar(),
-      tablet: TabletNavBar(),
+      // tablet: TabletNavBar(),
     );
   }
 
