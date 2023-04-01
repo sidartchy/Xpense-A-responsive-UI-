@@ -19,65 +19,48 @@ class _Container2State extends State<Container2> {
     );
   }
 
+// ================ MOBILE VIEW ==================//
+
   Widget MobileContainer1() {
     return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(color: AppColors.primary),
       child: Column(
         children: [
           Container(
-            // width: w! * 0.,
-            height: h! * 0.4,
-            width: w! * 0.6,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/illustration1.png'),
+            padding:
+                const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 0),
+            child: Container(
+              height: 195,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(
+                      'assets/images/dashboard.png',
+                    ),
+                    fit: BoxFit.contain),
               ),
             ),
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          Text(
-            'Track your \nExpenses to \nSave Money',
-            textAlign: TextAlign.left,
-            style: TextStyle(
-                fontSize: w! / 10, fontWeight: FontWeight.bold, height: 1),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Text(
-            'Helps you to organize your income and expenses',
-            style: TextStyle(color: Colors.grey[600], fontSize: 16),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            height: 45,
-            child: Directionality(
-              textDirection: TextDirection.rtl,
-              child: ElevatedButton.icon(
-                style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all(AppColors.primary)),
-                onPressed: () {},
-                icon: const Icon(Icons.keyboard_arrow_down),
-                label: const Text('Try Free Demo'),
-              ),
+          Container(
+            width: double.infinity,
+            color: Colors.white,
+            padding: const EdgeInsets.symmetric(vertical: 40),
+            child: Column(
+              children: [
+                companyLogo('assets/images/fb.png'),
+                companyLogo('assets/images/google.png'),
+                companyLogo('assets/images/cocacola.png'),
+                companyLogo('assets/images/samsung.png'),
+              ],
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            ' - Web, iOs and Android',
-            style: TextStyle(color: Colors.grey[600], fontSize: 16),
           ),
         ],
       ),
     );
   }
 
+// ==================  DESKTOP VIEW ============= //
   Widget DesktopContainer2() {
     return Container(
       width: double.infinity,
