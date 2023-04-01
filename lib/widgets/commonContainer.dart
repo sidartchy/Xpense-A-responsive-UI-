@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:xpense/utils/colors.dart';
 import 'package:xpense/utils/consts.dart';
 
+// ignore: non_constant_identifier_names
 Widget CommonContainer(
     {required String title,
-    heading,
-    description,
-    image,
+    required String heading,
+    required String description,
+    required String image,
     required bool imageLeft}) {
   return Container(
     color: Colors.white,
@@ -41,8 +43,9 @@ Widget CommonContainer(
                 textAlign: imageLeft ? TextAlign.right : TextAlign.left,
                 heading,
                 style: TextStyle(
-                    color: Colors.grey[400],
+                    color: Colors.black,
                     fontSize: w! / 20,
+                    height: 1.1,
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
@@ -56,9 +59,36 @@ Widget CommonContainer(
                     fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
+              Directionality(
+                textDirection: TextDirection.rtl,
+                child: TextButton.icon(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.arrow_circle_right,
+                      size: 20,
+                      color: AppColors.primary,
+                    ),
+                    label: Text(
+                      'Learn more',
+                      style: TextStyle(color: AppColors.primary),
+                    )),
+              )
             ],
           ),
         ),
+        !imageLeft
+            ? Expanded(
+                child: Container(
+                  height: 530,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(image),
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              )
+            : Container(),
       ],
     ),
   );

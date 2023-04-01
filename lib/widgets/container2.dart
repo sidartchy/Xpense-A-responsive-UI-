@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:xpense/utils/colors.dart';
-import 'package:xpense/utils/consts.dart';
 
 class Container2 extends StatefulWidget {
   const Container2({super.key});
@@ -33,7 +32,7 @@ class _Container2State extends State<Container2> {
             child: Container(
               height: 195,
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
                       'assets/images/dashboard.png',
@@ -118,7 +117,7 @@ class _Container2State extends State<Container2> {
           ),
           Container(
             color: Colors.white,
-            padding: EdgeInsets.symmetric(vertical: 40),
+            padding: const EdgeInsets.symmetric(vertical: 40),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

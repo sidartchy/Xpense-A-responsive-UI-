@@ -3,7 +3,7 @@ import 'package:xpense/screens/home.dart';
 import 'package:xpense/utils/colors.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'HindSiliguri',
         primaryColor: AppColors.primary,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

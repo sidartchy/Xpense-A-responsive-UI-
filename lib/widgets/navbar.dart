@@ -28,7 +28,7 @@ class _NavBarState extends State<NavBar> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(Icons.menu),
+          const Icon(Icons.menu),
           navLogo(),
         ],
       ),
