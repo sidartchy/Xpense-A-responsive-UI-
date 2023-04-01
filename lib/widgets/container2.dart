@@ -13,14 +13,14 @@ class _Container2State extends State<Container2> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: MobileContainer1(),
+      mobile: MobileContainer2(),
       desktop: DesktopContainer2(),
     );
   }
 
 // ================ MOBILE VIEW ==================//
 
-  Widget MobileContainer1() {
+  Widget MobileContainer2() {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(color: AppColors.primary),

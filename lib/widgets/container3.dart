@@ -19,7 +19,13 @@ class _Container3State extends State<Container3> {
   }
 
   Widget MobileContainer3() {
-    return Container();
+    return CommonContainerMobile(
+       title: "always online",
+      heading: 'Real-time support with cloud',
+      description:
+          'e tempor nulla ut officia qui dolor magna ullamco reprehenderit proident ea nostrud labore.',
+      image: 'assets/images/illustration1.png',
+    );
   }
 
   Widget DesktopContainer3() {

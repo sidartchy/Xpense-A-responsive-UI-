@@ -20,7 +20,13 @@ class _Container5State extends State<Container5> {
   }
 
   Widget MobileContainer5() {
-    return Container();
+    return CommonContainerMobile(
+      title: "use any time",
+      heading: 'Use anytime when you need',
+      description:
+          'Incididunm ident fugiat dolore consequat sit. Tempor velit laborum qui qui sunt. Adipisicing nostrud ut eu minim. Est elit reprehenderit commodo elit aute excepteur reprehenderit quis veniam.',
+      image: 'assets/images/illustration3.png',
+    );
   }
 
   Widget DesktopContainer5() {

@@ -19,7 +19,13 @@ class _Container4State extends State<Container4> {
   }
 
   Widget MobileContainer4() {
-    return Container();
+    return CommonContainerMobile(
+      title: "free some cose",
+      heading: 'Save cost for you and family',
+      description:
+          ' nostrud aliqua ad exercitation eiusmod proident fugiat dolore consequat sit. Tempor velit laborum qui qui sunt. Adipisicing nostrud ut eu minim. Est elit reprehenderit commodo elit aute excepteur reprehenderit quis veniam.',
+      image: 'assets/images/illustration2.png',
+    );
   }
 
   Widget DesktopContainer4() {

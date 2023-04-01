@@ -110,8 +110,8 @@ class _Container1State extends State<Container1> {
                         textDirection: TextDirection.rtl,
                         child: ElevatedButton.icon(
                           style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(
-                                  AppColors.primary)),
+                              backgroundColor:
+                                  MaterialStateProperty.all(AppColors.primary)),
                           onPressed: () {},
                           icon: const Icon(Icons.keyboard_arrow_down),
                           label: const Text('Try Free Demo'),
